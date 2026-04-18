@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <style>
-/* === BASE THEME (unchanged except added social icons style) === */
+/* === BASE THEME (UPDATED: PROFESSIONAL CATEGORY GRID 16:9) === */
 * {
     box-sizing: border-box;
 }
@@ -136,11 +136,11 @@ body {
     vertical-align: middle;
 }
 
-/* categories grid - 2 columns */
+/* categories grid - 2 columns with 16:9 professional look */
 .categories-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 18px;
     margin: 20px 0;
     padding: 0 10px;
 }
@@ -156,14 +156,31 @@ body {
 .category-card:hover { border-color: #ff3300; transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255,51,0,0.3);}
 .category-thumb {
     width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    object-fit: cover;
+    aspect-ratio: 16 / 9;    /* ✅ Fixed 16:9 professional ratio */
+    object-fit: cover;       /* ✅ Ensures all thumbs fill uniformly */
     display: block;
     background: #1a1a1a;
 }
-.category-name { padding: 15px; font-size: 18px; font-weight: bold; color: #ffcc00; background: rgba(0,0,0,0.8);}
-.video-count { position: absolute; top: 10px; right: 10px; background: rgba(255,51,0,0.9); color: white; padding: 4px 8px; border-radius: 12px; font-size: 12px; font-weight: bold;}
+.category-name { 
+    padding: 14px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #ffcc00; 
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+}
+.video-count { 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    background: rgba(255,51,0,0.9); 
+    color: white; 
+    padding: 4px 10px; 
+    border-radius: 20px; 
+    font-size: 12px; 
+    font-weight: bold;
+    z-index: 2;
+}
 
 /* trending section */
 .section-title {
@@ -405,8 +422,8 @@ body {
 }
 </style>
 
-<!-- Social Bar (updated to new domain) -->
-<script src="https://encyclopediainsoluble.com/3a/d6/0f/3ad60f18f18ad6833a8dd0aadd895e49.js"></script>
+<!-- ✅ NEW SOCIAL BAR SCRIPT (UPDATED) -->
+<script src="https://encyclopediainsoluble.com/4d/13/c4/4d13c4d080a3a07b7d1b3476eb816003.js"></script>
 
 <script>
 (function() {
@@ -431,7 +448,7 @@ body {
      <script src="age-gate.js" async></script>
 </head>
 <body>
-        <!-- ✅ Ye 2 lines har page ke </body> se pehle -->
+    <!-- ✅ Ye 2 lines har page ke </body> se pehle -->
     <script src="bubble-system/bubble-sounds.js"></script>
     <script src="bubble-system/bubble-core.js"></script>
 
@@ -456,7 +473,7 @@ body {
         <div class="stat-item"><div class="stat-number" id="trendingVideos">0</div><div class="stat-label">Trending</div></div>
     </div>
     
-    <!-- Banner 320x50 (top) - will be loaded via new domain -->
+    <!-- ✅ NEW TOP AD 320x50 (mobile) / 728x90 (desktop) - will be loaded via JS using new keys -->
     <div id="ad-top"></div>
     
     <div class="section-title">🎯 Browse Categories</div>
@@ -474,10 +491,10 @@ body {
         <div class="pagination" id="latestPagination"></div>
     </div>
     
-    <!-- Banner 300x250 (bottom) - will be loaded via new domain -->
+    <!-- ✅ NEW BOTTOM AD (300x250 mobile / 728x90 desktop) -->
     <div id="ad-bottom"></div>
 
-    <!-- 🆕 BOTTOM SOCIAL ICONS (above sticky ad, so not hidden) -->
+    <!-- 🆕 BOTTOM SOCIAL ICONS (above sticky ad) -->
     <div class="social-3d">
         <a href="https://www.instagram.com/candylink_official" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://t.me/candylink6" target="_blank" class="social-btn telegram"><i class="fab fa-telegram-plane"></i></a>
@@ -485,7 +502,7 @@ body {
     </div>
 </div>
 
-<!-- Sticky Banner 320x50 -->
+<!-- ✅ NEW STICKY AD 320x50 (UPDATED KEY) -->
 <div id="sticky"></div>
 
 <!-- data.js (videos list) -->
@@ -499,11 +516,14 @@ let reversedVideos = [];
 let latestCurrentPage = 0;
 const LATEST_PER_PAGE = 10;
 const AD_AFTER_EVERY = 5;
-const MOBILE_AD_KEY = '28a19f677ddf30c65892eb4af1ddee10';
-const AD_WIDTH = 320, AD_HEIGHT = 50;
 
-// Native ad container ID
-const NATIVE_CONTAINER_ID = 'container-dceead676280d8758acad3c44709124b';
+// ✅ NEW AD KEYS
+const KEY_320x50 = '56b3e3a26900c426b81430f9f85a31d6';
+const KEY_300x250 = '8e09ed2a29423c808ccb93e333fa00c5';
+const KEY_728x90 = '57e196c0c8406efacc614d4b4d21d13d';
+
+// Native ad container ID (UPDATED)
+const NATIVE_CONTAINER_ID = 'container-4b10501c070917e2ceca3f13f9e60117';
 
 function escapeHtml(str) {
     if (!str) return '';
@@ -621,7 +641,7 @@ function renderLatestPage(page) {
     }
     const finalHtml = `<div class="latest-video-row">${itemsHtml.join('')}</div>`;
     container.innerHTML = finalHtml;
-    adSlots.forEach(adId => loadAdIntoElement(adId, MOBILE_AD_KEY, AD_WIDTH, AD_HEIGHT));
+    adSlots.forEach(adId => loadAdIntoElement(adId, KEY_320x50, 320, 50));
     document.querySelectorAll('.latest-card').forEach(card => {
         const videoId = card.getAttribute('data-video-id');
         if (videoId) {
@@ -644,7 +664,7 @@ function updatePaginationControls(totalPages, currentPage) {
     }
     paginationDiv.innerHTML = `
         <button id="prevLatestBtn" ${currentPage === 0 ? 'disabled' : ''}>◀ PREV</button>
-        <span class="page-info">Page ${currentPage+1} / ${totalPages}</span>
+<span class="page-info">Page ${currentPage+1} / ${totalPages}</span>
         <button id="nextLatestBtn" ${currentPage === totalPages-1 ? 'disabled' : ''}>NEXT ▶</button>
     `;
     document.getElementById('prevLatestBtn')?.addEventListener('click', () => {
@@ -655,7 +675,7 @@ function updatePaginationControls(totalPages, currentPage) {
     });
 }
 
-// UPDATED: new domain encyclopediainsoluble.com
+// Updated ad loader using new domain and keys
 function loadAdIntoElement(elementId, key, width, height) {
     const containerDiv = document.getElementById(elementId);
     if (!containerDiv) return;
@@ -718,7 +738,7 @@ function displayCategories(categories) {
     categories.forEach(cat => {
         const cnt = videos ? videos.filter(v => v.categories && v.categories.includes(cat.id)).length : 0;
         container.innerHTML += `<div class="category-card" onclick="selectCategory('${cat.id}')">
-        <img src="${cat.thumbnail}" alt="${cat.name}" class="category-thumb" loading="lazy" onerror="this.src='https://via.placeholder.com/280x180?text=No+Image'">
+        <img src="${cat.thumbnail}" alt="${cat.name}" class="category-thumb" loading="lazy" onerror="this.src='https://via.placeholder.com/320x180?text=No+Image'">
             <div class="video-count">${cnt} videos</div>
             <div class="category-name">${cat.name}</div>
         </div>`;
@@ -739,19 +759,17 @@ function loadTrendingVideos() {
     if (!videos) return;
     const trendingVideos = videos.filter(v => TRENDING_IDS.includes(v.id));
     
-    // First, inject Native Ad as first item (blended as 16:9 card) - using new domain
+    // Inject Native Ad Card (updated with new container id and script)
     injectNativeAdCard(container);
     
-    // Then add real trending videos
     trendingVideos.forEach(video => {
         container.innerHTML += `<div class="trending-item" onclick="goToVideo('${video.id}')">
             <img src="${getThumbnailUrl(video.id)}" class="trending-thumb" onerror="this.src='https://via.placeholder.com/200x120?text=No+Thumb'">
             <div class="trending-title">${video.id}</div>
         </div>`;
     });
-}
-
-// UPDATED: Native ad with new domain
+        }
+    // ✅ UPDATED Native ad injection (new container ID and script)
 function injectNativeAdCard(parentContainer) {
     const nativeCard = document.createElement('div');
     nativeCard.className = 'native-trending-card';
@@ -772,7 +790,7 @@ function injectNativeAdCard(parentContainer) {
     const script = document.createElement('script');
     script.async = true;
     script.setAttribute('data-cfasync', 'false');
-    script.src = 'https://encyclopediainsoluble.com/dceead676280d8758acad3c44709124b/invoke.js';
+    script.src = 'https://encyclopediainsoluble.com/4b10501c070917e2ceca3f13f9e60117/invoke.js';
     document.body.appendChild(script);
 }
 
@@ -819,7 +837,7 @@ function setupSearch() {
     });
 }
 
-// ========== ADS SYSTEM (UPDATED to new domain encyclopediainsoluble.com) ==========
+// ========== ADS SYSTEM (UPDATED KEYS & DOMAIN) ==========
 let refreshCount = 0;
 const MAX_REFRESHES = 2;
 let lastActivity = Date.now();
@@ -842,13 +860,13 @@ function loadAd(id, key, w, h) {
 
 function loadAllAds() {
     if(window.innerWidth < 768) {
-        loadAd('ad-top', '28a19f677ddf30c65892eb4af1ddee10', 320, 50);
-        loadAd('ad-bottom', '1236280d3c879dfd9af37ab923f7cfb3', 300, 250);
-        loadAd('sticky', '28a19f677ddf30c65892eb4af1ddee10', 320, 50);
+        loadAd('ad-top', KEY_320x50, 320, 50);
+        loadAd('ad-bottom', KEY_300x250, 300, 250);
+        loadAd('sticky', KEY_320x50, 320, 50);
     } else {
-        loadAd('ad-top', 'a7f6af07e7b981a82b1a2a982b13ba01', 728, 90);
-        loadAd('ad-bottom', 'a7f6af07e7b981a82b1a2a982b13ba01', 728, 90);
-        loadAd('sticky', '28a19f677ddf30c65892eb4af1ddee10', 320, 50);
+        loadAd('ad-top', KEY_728x90, 728, 90);
+        loadAd('ad-bottom', KEY_728x90, 728, 90);
+        loadAd('sticky', KEY_320x50, 320, 50);
     }
 }
 
