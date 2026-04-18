@@ -908,10 +908,10 @@ function openExternal(url) {
         window.location.href = "intent://" + cleanUrl + "#Intent;scheme=https;action=android.intent.action.VIEW;end";
     } else { window.location.href = url; }
 }
-function goToVideo(videoId) { openExternal(`https://candylink69.vercel.app/video.html?v=${videoId}`); }
+function goToVideo(videoId) { openExternal(`https://candylink69.com/video.html?v=${videoId}`); }
 function selectCategory(categoryId) {
     localStorage.setItem('selectedCategory', categoryId);
-    openExternal(`https://candylink69.vercel.app/list.html?category=${categoryId}`);
+    openExternal(`https://candylink69.com/list.html?category=${categoryId}`);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
