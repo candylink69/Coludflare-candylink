@@ -149,7 +149,7 @@ h1 {
 .thumb-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
+  aspect-ratio: 16 / 9;   /* ✅ Professional 16:9 */
   overflow: hidden;
   border-radius: 10px;
   background: #111;
@@ -289,10 +289,10 @@ h1 {
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="bubble-system/bubble-styles.css">
+<link rel="stylesheet" href="bubble-system/bubble-styles.css">
 </head>
 <body>
-      <!-- ✅ Ye 2 lines har page ke </body> se pehle -->
+    <!-- ✅ Ye 2 lines har page ke </body> se pehle -->
     <script src="bubble-system/bubble-sounds.js"></script>
     <script src="bubble-system/bubble-core.js"></script>
 
@@ -320,45 +320,45 @@ h1 {
     <div id="searchResults"></div>
   </div>
 
-  <!-- SMARTLINK (UPDATED) -->
-  <a class="smart" href="https://encyclopediainsoluble.com/njp16fur?key=f0a7ec3b2fa8d91d821777018c8eec71" target="_blank">
+  <!-- ✅ NEW SMARTLINK (UPDATED) -->
+  <a class="smart" href="https://encyclopediainsoluble.com/yk3xgpyy9?key=a0e75c4e5e62d340d6dc8b7a8ae38946" target="_blank">
     🔥 Watch More Exclusive Content 🔥
   </a>
 
-  <!-- 🟢 NATIVE BANNER (MAIN EARNING SOURCE) - KEEP AS IS -->
+  <!-- ✅ NEW NATIVE BANNER (UPDATED CONTAINER & SCRIPT) -->
   <div class="ad-box">
-    <script async="async" data-cfasync="false" src="https://encyclopediainsoluble.com/dceead676280d8758acad3c44709124b/invoke.js"></script>
-    <div id="container-dceead676280d8758acad3c44709124b"></div>
+    <script async="async" data-cfasync="false" src="https://encyclopediainsoluble.com/4b10501c070917e2ceca3f13f9e60117/invoke.js"></script>
+    <div id="container-4b10501c070917e2ceca3f13f9e60117"></div>
   </div>
 
   <!-- VIDEO GRID -->
   <div class="grid" id="videoList"></div>
 
-  <!-- 📌 BOTTOM AD BOX (DESKTOP 728x90 / MOBILE 300x250) - SIRF EK BANNER -->
+  <!-- 📌 BOTTOM AD BOX (UPDATED KEYS: DESKTOP 728x90 / MOBILE 300x250) -->
   <div class="ad-box">
     <div class="ad-desktop">
       <script>
         atOptions = {
-          'key' : 'a7f6af07e7b981a82b1a2a982b13ba01',
+          'key' : '57e196c0c8406efacc614d4b4d21d13d',  // ✅ New 728x90 key
           'format' : 'iframe',
           'height' : 90,
           'width' : 728,
           'params' : {}
         };
       </script>
-      <script async src="https://encyclopediainsoluble.com/a7f6af07e7b981a82b1a2a982b13ba01/invoke.js"></script>
+      <script async src="https://encyclopediainsoluble.com/57e196c0c8406efacc614d4b4d21d13d/invoke.js"></script>
     </div>
     <div class="ad-mobile">
       <script>
         atOptions = {
-          'key' : '1236280d3c879dfd9af37ab923f7cfb3',
+          'key' : '8e09ed2a29423c808ccb93e333fa00c5',  // ✅ New 300x250 key
           'format' : 'iframe',
           'height' : 250,
           'width' : 300,
           'params' : {}
         };
       </script>
-      <script async src="https://encyclopediainsoluble.com/1236280d3c879dfd9af37ab923f7cfb3/invoke.js"></script>
+      <script async src="https://encyclopediainsoluble.com/8e09ed2a29423c808ccb93e333fa00c5/invoke.js"></script>
     </div>
   </div>
 
@@ -375,31 +375,37 @@ h1 {
 
 </div> <!-- end wrapper -->
 
-<!-- STICKY MOBILE 320x50 (UPDATED) -->
+<!-- ✅ NEW STICKY MOBILE 320x50 (UPDATED KEY) -->
 <div class="sticky">
   <script>
     atOptions = {
-      'key' : '28a19f677ddf30c65892eb4af1ddee10',
+      'key' : '56b3e3a26900c426b81430f9f85a31d6',  // ✅ New 320x50 key
       'format' : 'iframe',
       'height' : 50,
       'width' : 320,
       'params' : {}
     };
   </script>
-  <script async src="https://encyclopediainsoluble.com/28a19f677ddf30c65892eb4af1ddee10/invoke.js"></script>
+  <script async src="https://encyclopediainsoluble.com/56b3e3a26900c426b81430f9f85a31d6/invoke.js"></script>
 </div>
 
-<!-- SOCIAL BAR SCRIPT (UPDATED) - FLOATING NOTIFICATION, NO EXTRA FIX -->
-<script async src="https://encyclopediainsoluble.com/3a/d6/0f/3ad60f18f18ad6833a8dd0aadd895e49.js"></script>
+<!-- ✅ NEW SOCIAL BAR SCRIPT (UPDATED) - FLOATING NOTIFICATION -->
+<script async src="https://encyclopediainsoluble.com/4d/13/c4/4d13c4d080a3a07b7d1b3476eb816003.js"></script>
+
 <script src="thumbs.js"></script>
 <script src="data.js"></script>
 <script>
-// ========== CONFIGURATION (SAME AS BEFORE) ==========
+// ========== CONFIGURATION (UPDATED AD KEYS) ==========
 const PER_PAGE = 20;
 let allCategories = [];
 let selectedCategory = null;
 let categoryName = "All Categories";
 let filteredVideos = [];
+
+// ✅ NEW AD KEYS
+const KEY_320x50 = '56b3e3a26900c426b81430f9f85a31d6';
+const KEY_300x250 = '8e09ed2a29423c808ccb93e333fa00c5';
+const KEY_728x90 = '57e196c0c8406efacc614d4b4d21d13d';
 
 async function loadCategoriesData() {
     try {
@@ -588,7 +594,7 @@ function generatePagination(currentPage, totalPages, category) {
     if (endPage - startPage + 1 < maxVisiblePages) {
         startPage = Math.max(1, endPage - maxVisiblePages + 1);
     }
-    if (startPage > 1) {
+  if (startPage > 1) {
         const categoryParam = category ? `category=${category}` : '';
         paginationHTML += `<a href="list.html?${categoryParam}">1</a> `;
         if (startPage > 2) paginationHTML += `<span>...</span> `;
@@ -635,7 +641,7 @@ function setupTouchPreview() {
     });
 }
 
-// ========== AD REFRESH SYSTEM (UPDATED DOMAIN) ==========
+// ========== AD REFRESH SYSTEM (UPDATED KEYS & DOMAIN) ==========
 (function() {
   'use strict';
   function loadAd(id, key, w, h) {
@@ -652,13 +658,13 @@ function setupTouchPreview() {
   }
   function loadAllAds() {
     if(window.innerWidth < 768) {
-      loadAd('ad-top', '28a19f677ddf30c65892eb4af1ddee10', 320, 50);
-      loadAd('ad-bottom', '1236280d3c879dfd9af37ab923f7cfb3', 300, 250);
-      loadAd('sticky', '28a19f677ddf30c65892eb4af1ddee10', 320, 50);
+      loadAd('ad-top', KEY_320x50, 320, 50);
+      loadAd('ad-bottom', KEY_300x250, 300, 250);
+      loadAd('sticky', KEY_320x50, 320, 50);
     } else {
-      loadAd('ad-top', 'a7f6af07e7b981a82b1a2a982b13ba01', 728, 90);
-      loadAd('ad-bottom', 'a7f6af07e7b981a82b1a2a982b13ba01', 728, 90);
-      loadAd('sticky', '28a19f677ddf30c65892eb4af1ddee10', 320, 50);
+      loadAd('ad-top', KEY_728x90, 728, 90);
+      loadAd('ad-bottom', KEY_728x90, 728, 90);
+      loadAd('sticky', KEY_320x50, 320, 50);
     }
   }
   let refreshCount = 0;
@@ -703,3 +709,4 @@ document.addEventListener('DOMContentLoaded', initializePage);
 </script>
 </body>
 </html>
+       
