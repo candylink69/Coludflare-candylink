@@ -276,7 +276,7 @@ body{
     <!-- Blinking Title -->
     <div class="title" id="mainTitle">🔥 CandyLink69 🔥</div>
 
-    <!-- Top Ad (new domain) -->
+    <!-- ✅ NEW TOP AD (320x50 mobile / 728x90 desktop) will be loaded via JS -->
     <div id="ad-top" class="ad-spot"></div>
 
     <!-- Small Social Icons + text (above warning box) -->
@@ -319,21 +319,21 @@ body{
         <a class="nav-btn" id="nextBtn" href="#" style="display:none">Next ▶</a>
     </div>
 
-    <!-- Smartlink (new domain) -->
+    <!-- ✅ NEW SMARTLINK (UPDATED) -->
     <div class="danger-box">
         <div class="danger-text">🥵 YOU WANT SOMETHING SPICY? 🥵</div>
-        <a class="danger-btn" href="https://encyclopediainsoluble.com/njp16fur?key=f0a7ec3b2fa8d91d821777018c8eec71" target="_blank" rel="noopener noreferrer">
+        <a class="danger-btn" href="https://encyclopediainsoluble.com/yk3xgpyy9?key=a0e75c4e5e62d340d6dc8b7a8ae38946" target="_blank" rel="noopener noreferrer">
             CLICK HERE
         </a>
     </div>
 
-    <!-- Native Banner (moved below smartlink, new domain) -->
+    <!-- ✅ NEW NATIVE BANNER (UPDATED CONTAINER & SCRIPT) -->
     <div class="native-ad-container">
-        <script async data-cfasync="false" src="https://encyclopediainsoluble.com/dceead676280d8758acad3c44709124b/invoke.js"></script>
-        <div id="container-dceead676280d8758acad3c44709124b"></div>
+        <script async data-cfasync="false" src="https://encyclopediainsoluble.com/4b10501c070917e2ceca3f13f9e60117/invoke.js"></script>
+        <div id="container-4b10501c070917e2ceca3f13f9e60117"></div>
     </div>
 
-    <!-- Bottom Ad (new domain) -->
+    <!-- ✅ NEW BOTTOM AD (300x250 mobile / 728x90 desktop) -->
     <div id="ad-bottom"></div>
 
     <!-- Bottom Social Row (above sticky ad) -->
@@ -348,11 +348,11 @@ body{
 
 </div>
 
-<!-- Sticky Ad Footer (new domain) -->
+<!-- ✅ NEW STICKY AD FOOTER (320x50) -->
 <div id="sticky"></div>
 
-<!-- ✅ SOCIAL BAR SCRIPT (FLOATING NOTIFICATION) - KEPT AS REQUESTED, NOT REMOVED -->
-<script src="https://encyclopediainsoluble.com/3a/d6/0f/3ad60f18f18ad6833a8dd0aadd895e49.js"></script>
+<!-- ✅ NEW SOCIAL BAR SCRIPT (UPDATED) -->
+<script src="https://encyclopediainsoluble.com/4d/13/c4/4d13c4d080a3a07b7d1b3476eb816003.js"></script>
 
 <script>
     // ========== VIDEO LOADER ==========
@@ -391,7 +391,11 @@ body{
             document.querySelector('.video-box').innerHTML = '<div style="padding:50px;color:#ff8888">⚠️ Failed to load video data.</div>';
         });
 
-    // ========== AD LOADER (new domain) ==========
+    // ========== AD KEYS (NEW) ==========
+    const KEY_320x50 = '56b3e3a26900c426b81430f9f85a31d6';
+    const KEY_300x250 = '8e09ed2a29423c808ccb93e333fa00c5';
+    const KEY_728x90 = '57e196c0c8406efacc614d4b4d21d13d';
+
     function loadAd(containerId, key, width, height) {
         const container = document.getElementById(containerId);
         if (!container) return;
@@ -428,11 +432,11 @@ body{
         }
         const isMobile = window.innerWidth < 768;
         if (isMobile) {
-            loadAd('ad-top', '28a19f677ddf30c65892eb4af1ddee10', 320, 50);
+            loadAd('ad-top', KEY_320x50, 320, 50);
         } else {
-            loadAd('ad-top', 'a7f6af07e7b981a82b1a2a982b13ba01', 728, 90);
+            loadAd('ad-top', KEY_728x90, 728, 90);
         }
-        loadAd('sticky', '28a19f677ddf30c65892eb4af1ddee10', 320, 50);
+        loadAd('sticky', KEY_320x50, 320, 50);
         refreshCount++;
         if (refreshCount < MAX_REFRESHES) scheduleRefresh();
     }
@@ -452,13 +456,13 @@ body{
     function loadInitialAds() {
         const isMobile = window.innerWidth < 768;
         if (isMobile) {
-            loadAd('ad-top', '28a19f677ddf30c65892eb4af1ddee10', 320, 50);
-            loadAd('ad-bottom', '1236280d3c879dfd9af37ab923f7cfb3', 300, 250);
+            loadAd('ad-top', KEY_320x50, 320, 50);
+            loadAd('ad-bottom', KEY_300x250, 300, 250);
         } else {
-            loadAd('ad-top', 'a7f6af07e7b981a82b1a2a982b13ba01', 728, 90);
-            loadAd('ad-bottom', 'a7f6af07e7b981a82b1a2a982b13ba01', 728, 90);
+            loadAd('ad-top', KEY_728x90, 728, 90);
+            loadAd('ad-bottom', KEY_728x90, 728, 90);
         }
-        loadAd('sticky', '28a19f677ddf30c65892eb4af1ddee10', 320, 50);
+        loadAd('sticky', KEY_320x50, 320, 50);
     }
 
     // Activity tracking
@@ -484,4 +488,4 @@ body{
     });
 </script>
 </body>
-</html>
+            </html>
