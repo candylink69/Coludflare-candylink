@@ -49,7 +49,10 @@ const thumbnails = {
     "GB001":  "https://i.postimg.cc/0NvYcp38/GB001.webp",
     "Movie007":   "https://i.postimg.cc/R0gJxDd9/Movie007.webp",
     "S008":    "https://i.postimg.cc/zf9wJVwL/S008.webp",
-    "Movie008": "https://i.postimg.cc/RF4mcHNV/Movie008.webp"
+    "Movie008": "https://i.postimg.cc/RF4mcHNV/Movie008.webp",
+    "D002":   "https://i.postimg.cc/hGrKSFLn/D002.webp",
+    "FU002":  "https://i.postimg.cc/bvTqzXxq/FU002.webp",
+    "S009":   "https://i.postimg.cc/TP9TR8VG/S009.webp"
 };
 
 function getThumbnailUrl(videoId) {
