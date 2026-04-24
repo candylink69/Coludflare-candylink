@@ -1,0 +1,45 @@
+# ==========================================
+# CANDYLINK69 ADVANCED ROBOTS.TXT
+# ==========================================
+
+# 1. GOOGLE & BROWSERS (Inhe aane do ranking ke liye)
+User-agent: Googlebot
+User-agent: Applebot
+User-agent: Bingbot
+User-agent: Slurp
+User-agent: DuckDuckBot
+Allow: /
+
+# 2. ADS & SOCIAL (Inhe aane do paise aur traffic ke liye)
+User-agent: Mediapartners-Google
+User-agent: AdsBot-Google
+User-agent: AdsterraBot
+User-agent: ExoClickBot
+User-agent: Facebot
+User-agent: facebookexternalhit
+Allow: /
+
+# 3. THE "JASOOS" BOTS (100% block - DMCA ka rasta band)
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: Rogerbot
+User-agent: BLEXBot
+User-agent: PetalBot
+User-agent: DataForSeoBot
+Disallow: /
+
+# 4. AI & SCRAPERS (Content chori rokne ke liye)
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: CCBot
+Disallow: /
+
+# 5. SAFETY FOLDERS (Privacy)
+User-agent: *
+Disallow: /bubble-system/
+Disallow: /scripts/
+
+# 6. SITEMAP LOCATION (Ek baar)
+Sitemap: https://candylink69.com/sitemap.xml
