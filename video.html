@@ -365,6 +365,14 @@ body{
             const video = videosData[videoId];
             if (video) {
                 document.title = `CandyLink69 – ${video.title || videoId}`;
+                // Add meta description
+let metaDesc = document.querySelector('meta[name="description"]');
+if (!metaDesc) {
+    metaDesc = document.createElement('meta');
+    metaDesc.name = "description";
+    document.head.appendChild(metaDesc);
+}
+metaDesc.content = `Watch ${video.title || videoId} in HD. ${video.description ? video.description.substring(0, 120) : 'Exclusive video on CandyLink69.'}`;
                 document.getElementById('videoPlayer').src = video.embed;
                 document.getElementById('currentVideoId').textContent = videoId;
                 if (video.description) {
