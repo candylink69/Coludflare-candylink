@@ -435,6 +435,14 @@ function setupCategoryInfo(categoryId) {
     categoryName = category ? category.name : selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1);
     document.getElementById('currentCategory').textContent = categoryName;
     document.title = `${categoryName} Videos - CandyLink69`;
+     // After setting document.title, add this:
+let metaDesc = document.querySelector('meta[name="description"]');
+if (!metaDesc) {
+    metaDesc = document.createElement('meta');
+    metaDesc.name = "description";
+    document.head.appendChild(metaDesc);
+}
+metaDesc.content = `Browse all ${categoryName} videos on CandyLink69. HD quality, daily updates.`;
     document.getElementById('pageTitle').textContent = `🔥 ${categoryName} Videos 🔥`;
 }
 
@@ -527,6 +535,17 @@ async function initializePage() {
     await loadCategoriesData();
     filterVideosByCategory();
     setupSearch();
+       // If no category selected (All Categories), set meta description
+if (!selectedCategory) {
+    document.title = "All Videos - CandyLink69";
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (!metaDesc) {
+        metaDesc = document.createElement('meta');
+        metaDesc.name = "description";
+        document.head.appendChild(metaDesc);
+    }
+    metaDesc.content = "Watch all exclusive videos on CandyLink69. New content added daily.";
+}
     const urlParams = new URLSearchParams(window.location.search);
     const PAGE = parseInt(urlParams.get('page')) || 1;
     const totalVideos = filteredVideos.length;
