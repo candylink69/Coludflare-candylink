@@ -383,6 +383,20 @@ const videos = [
     duration: "46:26",
     categories: ["sister"],
     preview: "https://candylink69.embed4me.vip/WITN3QMIS10nPv2sgzz6CQ/hz/9dr5kx6z/6ncwj5/preview.webp"
+  },
+  {
+    id: "O003",
+    title: "In search of a different kind of fruit, she ends up getting fucked by the cleaner.",
+    duration: "31:09",
+    categories: ["O"],
+    preview: "https://candylink69.embed4me.vip/2sf3xMq_GtvWl58Xw6ajNQ/luy/afyhwe5y/95i66h/preview.webp"
+  },
+  {
+    id: "O004",
+    title: "She gets caught red-handed stealing a parcel, and to escape, she seduces the person and has sex with him.",
+    duration: "30:05",
+    categories: ["O"],
+    preview: "https://candylink69.embed4me.vip/6AhXROJaKjJt7IBaAQ5FHA/pq/afyhwe5y/cmdo1s/preview.webp"
   }
 ];
 
