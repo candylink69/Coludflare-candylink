@@ -404,6 +404,20 @@ const videos = [
     duration: "38:46",
     categories: ["C"],
     preview: "https://candylink69.embed4me.vip/qLHron7BcKdcLTPspxXHIw/kdv/afyhwe5y/ijy15j/preview.webp"
+  },
+  {
+    id: "M005",
+    title: "The son's cock always gets hard whenever he sees his dad's girlfriend.",
+    duration: "31:54",
+    categories: ["mom"],
+    preview: "https://candylink69.embed4me.vip/hf7UzAXZhYD0dzri5gJCmw/sc/qt5b8v16/nfdmtd/preview.webp"
+  },
+  {
+    id: "M006",
+    title: "Mother always fulfills the desire to drink milk.",
+    duration: "28:38",
+    categories: ["mom"],
+    preview: "https://candylink69.embed4me.vip/v11ZKnl4xqzCN9OseviQhQ/9ow/qt5b8v16/6nm8f5/preview.webp"
   }
 ];
 
