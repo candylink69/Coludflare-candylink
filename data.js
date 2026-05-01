@@ -397,6 +397,13 @@ const videos = [
     duration: "30:05",
     categories: ["O"],
     preview: "https://candylink69.embed4me.vip/6AhXROJaKjJt7IBaAQ5FHA/pq/afyhwe5y/cmdo1s/preview.webp"
+  },
+  {
+    id: "C001",
+    title: "She gets caught stealing in the house.",
+    duration: "38:46",
+    categories: ["C"],
+    preview: "https://candylink69.embed4me.vip/qLHron7BcKdcLTPspxXHIw/kdv/afyhwe5y/ijy15j/preview.webp"
   }
 ];
 
