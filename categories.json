@@ -54,6 +54,12 @@
     "description": ""
   },
   {
+    "id": "C",
+    "name": "Caught (C)",
+    "thumbnail": "https://i.postimg.cc/Znxn9HfR/C001.webp",
+    "description": ""
+  },
+  {
     "id": "O",
     "name": "Outdoor",
     "thumbnail": "https://i.postimg.cc/8kbQsBX4/O002.webp",
@@ -73,7 +79,7 @@
   },
   {
     "id": "free-use",
-    "name": "Free Use(FU)",
+    "name": "DO-Anything(FU)",
     "thumbnail": "https://i.postimg.cc/gJV9VvYQ/FU001.webp",
     "description": ""
   },
