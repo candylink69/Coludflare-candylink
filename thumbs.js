@@ -61,7 +61,8 @@ const thumbnails = {
     "O004": "https://i.postimg.cc/Kcn0N49Q/O004.webp",
     "C001": "https://i.postimg.cc/Znxn9HfR/C001.webp",
     "M005": "https://i.postimg.cc/cLy8XdkY/M005.webp",
-    "M006": "https://i.postimg.cc/DZJx12Mf/M006.webp"
+    "M006": "https://i.postimg.cc/DZJx12Mf/M006.webp",
+    "FF004":"https://i.postimg.cc/pd3BGXs1/FF004.webp"
 };
 
 function getThumbnailUrl(videoId) {
