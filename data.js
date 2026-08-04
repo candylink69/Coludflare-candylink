@@ -479,14 +479,14 @@ const videos = [
     id: "FF005",
     title: "Dreaming about own bodyguard ",
     duration: "53:52",
-    categories: ["O"],
+    categories: ["fantasy-flesh"],
     preview: "https://candylink69.embed4me.vip/vy5WLfwpIKjVNDj3KzMi5Q/36/xieomlsp/h5wcol/preview.webp"
   },
   {
     id: "S010",
     title: "The sister wants to show her brother's cock to her friend.",
     duration: "23:37",
-    categories: ["O"],
+    categories: ["sister"],
     preview: "https://candylink69.embed4me.vip/5fzftT8JWNXvk-D1tGmQaA/luy/xieomlsp/i3v8r8/preview.webp"
   }
 ];
