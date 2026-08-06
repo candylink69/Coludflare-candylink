@@ -55,8 +55,14 @@
   },
   {
     "id": "GB",
-    "name": "Gang-Bang",
+    "name": "Gang-Bang(GB)",
     "thumbnail": "https://i.postimg.cc/0NvYcp38/GB001.webp",
+    "description": ""
+  },
+  {
+    "id": "R",
+    "name": "Rough",
+    "thumbnail": "https://i.postimg.cc/2StXrj4B/R001.webp",
     "description": ""
   },
   {
@@ -67,7 +73,7 @@
   },
   {
     "id": "O",
-    "name": "Outdoor",
+    "name": "Outdoor(O)",
     "thumbnail": "https://i.postimg.cc/8kbQsBX4/O002.webp",
     "description": ""
   },
@@ -97,7 +103,7 @@
   },
   {
     "id": "Boss",
-    "name": "Boss",
+    "name": "Boss(B)",
     "thumbnail": "https://i.postimg.cc/C1TTnvVG/B002.webp",
     "description": ""
   },
