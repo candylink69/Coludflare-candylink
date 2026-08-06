@@ -488,6 +488,20 @@ const videos = [
     duration: "23:37",
     categories: ["sister"],
     preview: "https://candylink69.embed4me.vip/5fzftT8JWNXvk-D1tGmQaA/luy/xieomlsp/i3v8r8/preview.webp"
+  },
+  {
+    id: "R001",
+    title: "Cuteness overload",
+    duration: "25:11",
+    categories: ["R"],
+    preview: "https://candylink69.embed4me.vip/cYiOMxIg2n-NoPb42QniFA/is9/qt5b8l19/lwxsjo/preview.webp"
+    },
+  {
+    id: "B003",
+    title: "The boss fired the employee.",
+    duration: "23:03",
+    categories: ["Boss"],
+    preview: "https://candylink69.embed4me.vip/qzrf_Te2k3762gW5AYzXJQ/s93/qt5b8l19/h5fi3i/preview.webp"
   }
 ];
 
