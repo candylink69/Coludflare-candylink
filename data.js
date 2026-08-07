@@ -502,6 +502,13 @@ const videos = [
     duration: "23:03",
     categories: ["Boss"],
     preview: "https://candylink69.embed4me.vip/qzrf_Te2k3762gW5AYzXJQ/s93/qt5b8l19/h5fi3i/preview.webp"
+  },
+  {
+    id: "O007",
+    title: "The roadside beggar",
+    duration: "36:42",
+    categories: ["O"],
+    preview: "https://candylink69.embed4me.vip/QKSl76EUGuoZEyCiY2FhIQ/kdv/fmg9ywcc/5pns5u/preview.webp"
   }
 ];
 
