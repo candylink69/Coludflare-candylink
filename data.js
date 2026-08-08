@@ -509,6 +509,13 @@ const videos = [
     duration: "36:42",
     categories: ["O"],
     preview: "https://candylink69.embed4me.vip/QKSl76EUGuoZEyCiY2FhIQ/kdv/fmg9ywcc/5pns5u/preview.webp"
+  },
+  {
+    id: "CR001",
+    title: "The Classroom Sins",
+    duration: "21:32",
+    categories: ["CR"],
+    preview: "https://candylink69.embed4me.vip/miHf21B0f3pXz2Yr2_U48w/s93/ipljen89/cedqtv/preview.webp"
   }
 ];
 
