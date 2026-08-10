@@ -384,7 +384,7 @@
     // ✅ ADD CLICK TEXT (Bubble ke upar chipka hua)
     const clickText = document.createElement('span');
     clickText.className = 'bubble-click-text';
-    clickText.textContent = '🎧Catch me for surprise🧚🏻‍♀️';
+    clickText.textContent = '🧚🏻‍♀️Catch Me(use🎧)';
     bubble.appendChild(clickText);
     
     bubble.addEventListener('click', handleBubblePop(bubble, config, index));
