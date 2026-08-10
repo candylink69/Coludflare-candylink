@@ -495,7 +495,7 @@ const videos = [
     duration: "25:11",
     categories: ["R"],
     preview: "https://candylink69.embed4me.vip/cYiOMxIg2n-NoPb42QniFA/is9/qt5b8l19/lwxsjo/preview.webp"
-    },
+  },
   {
     id: "B003",
     title: "The boss fired the employee.",
@@ -516,6 +516,13 @@ const videos = [
     duration: "21:32",
     categories: ["CR"],
     preview: "https://candylink69.embed4me.vip/miHf21B0f3pXz2Yr2_U48w/s93/ipljen89/cedqtv/preview.webp"
+  },
+  {
+    id: "R002",
+    title: "Repaying debt",
+    duration: "32:43",
+    categories: ["R"],
+    preview: "https://candylink69.embed4me.vip/tGyS0UoNQscLbOUutynyEA/mik/skucpqea/pae5zg/preview.webp"
   }
 ];
 
