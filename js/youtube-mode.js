@@ -106,7 +106,7 @@
         controlsRow.id = 'ytControlsRow';
         
         const label = document.createElement('span');
-        label.textContent = 'YouTube Mode';
+        label.textContent = 'YT Mode';
         label.style.cssText = 'font-size:11px;color:#999;';
         controlsRow.appendChild(label);
         
