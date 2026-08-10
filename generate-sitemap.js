@@ -4,12 +4,12 @@ const SITE_URL = 'https://candylink69.com';
 console.log("🚀 Generating Sitemap for v= and category= structure...");
 
 // 1. Read data.js (Video IDs)
-const dataContent = fs.readFileSync('./data.js', 'utf-8');
+const dataContent = fs.readFileSync('./data/data.js', 'utf-8');
 const videoIdRegex = /id:\s*['"]([^'"]+)['"]/g;
 const videoIds = [...dataContent.matchAll(videoIdRegex)].map(m => m[1]);
 
 // 2. Read categories.json
-const categoriesData = JSON.parse(fs.readFileSync('./categories.json', 'utf-8'));
+const categoriesData = JSON.parse(fs.readFileSync('./data/categories.json', 'utf-8'));
 const categoryIds = categoriesData.map(cat => cat.id);
 
 // 3. XML Build (EXACT MATCH TO YOUR LINKS)
