@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CandyLink69 – Videos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- ✅ CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bubble System CSS -->
+    <link rel="stylesheet" href="bubble-system/bubble-styles.css">
+
+    <!-- ✅ CANONICAL (Dynamic JS se set hoga) -->
+    <link rel="canonical" id="dynamicCanonical" href="https://candylink69.com/list.html" />
+
+    <!-- ✅ Icons (Updated Path) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+</head>
+<body>
+
+    <!-- SIDE MENU -->
+    <div id="sideMenu"></div>
+
+    <!-- MAIN WRAPPER -->
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        <div id="headerContainer"></div>
+
+        <!-- ===== POINT 4 & 5: CATEGORY INFO (Compact + Button) ===== -->
+        <div class="category-info" id="categoryInfo">
+            <span class="category-name" id="currentCategory">All Categories</span>
+            <!-- ✅ Point 5: Back to Categories → Button + Home (Latest tab) -->
+            <a href="index.html?tab=latest" class="back-btn">← Back to Categories</a>
+        </div>
+
+        <!-- ===== POINT 4: Heading Chhota ===== -->
+        <h2 id="pageTitle" class="category-heading">🔥 CandyLink69 Exclusive Videos 🔥</h2>
+
+        <!-- SEARCH BAR -->
+        <div id="searchContainer"></div>
+
+        <!-- SMARTLINK -->
+        <a class="smart" href="https://encyclopediainsoluble.com/yk3xgpyy9?key=a0e75c4e5e62d340d6dc8b7a8ae38946" target="_blank">
+            🔥 Watch More Exclusive Content 🔥
+        </a>
+
+        <!-- NATIVE BANNER -->
+        <div class="ad-box">
+            <script async="async" data-cfasync="false" src="https://encyclopediainsoluble.com/4b10501c070917e2ceca3f13f9e60117/invoke.js"></script>
+            <div id="container-4b10501c070917e2ceca3f13f9e60117"></div>
+        </div>
+
+        <!-- VIDEO GRID -->
+        <div class="grid" id="videoList"></div>
+
+        <!-- BOTTOM AD -->
+        <div id="ad-bottom" class="ad-box"></div>
+
+        <!-- PAGINATION -->
+        <div class="pagination" id="paginationContainer"></div>
+
+        <!-- FOOTER SOCIAL -->
+        <div id="footerContainer"></div>
+
+    </div>
+
+    <!-- STICKY AD -->
+    <div id="sticky" class="sticky-ad"></div>
+
+    <!-- ========================================= -->
+    <!-- SCRIPTS (Updated Paths) -->
+    <!-- ========================================= -->
+
+    <!-- Data Files (Ab data/ folder mein) -->
+    <script src="data/data.js"></script>
+    <script src="data/thumbs.js"></script>
+
+    <!-- Age Gate -->
+    <script src="age-gate.js" async></script>
+
+    <!-- JS Modules -->
+    <script src="js/common.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/list.js"></script>
+
+    <!-- Bubble System -->
+    <script src="bubble-system/bubble-sounds.js"></script>
+    <script src="bubble-system/bubble-core.js"></script>
+
+    <!-- Canonical Update -->
+    <script>
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category');
+            if (category) {
+                const canonical = document.getElementById('dynamicCanonical');
+                if (canonical) {
+                    canonical.href = `https://candylink69.com/list.html?category=${category}`;
+                }
+            }
+        })();
+    </script>
+
+</body>
+</html>
