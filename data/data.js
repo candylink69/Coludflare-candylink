@@ -523,6 +523,13 @@ const videos = [
     duration: "32:43",
     categories: ["R"],
     preview: "https://candylink69.embed4me.vip/tGyS0UoNQscLbOUutynyEA/mik/skucpqea/pae5zg/preview.webp"
+  },
+  {
+    id: "N001",
+    title: "The Loneliness of Neighbors",
+    duration: "40:53",
+    categories: ["N"],
+    preview: "https://candylink69.embed4me.vip/U8KKdkCAOKv0xC9lURiNbw/rqz/skucpqea/mqy5v9/preview.webp"
   }
 ];
 
