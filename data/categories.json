@@ -55,9 +55,15 @@
     "description": ""
   },
   {
-    "id": "BS",
-    "name": "BSDM-Submissive (BS)",
-    "thumbnail": "https://i.postimg.cc/HxDD8SCB/BS001.webp",
+    "id": "BM",
+    "name": "Blackmailing (BM)",
+    "thumbnail": "https://i.postimg.cc/mDff1dG3/BM001.webp",
+    "description": ""
+  },
+  {
+    "id": "N",
+    "name": "Neighbors",
+    "thumbnail": "https://i.postimg.cc/bJvcn9V2/N001.webp",
     "description": ""
   },
   {
